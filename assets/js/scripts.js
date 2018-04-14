@@ -1,0 +1,1 @@
+!function(){var e=0;setInterval(function(){var n=["#e5c100","#788757","#00447C"];document.getElementById("intro").style.background=n[e],e=(e+1)%n.length},1e3)}();

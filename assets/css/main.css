@@ -1,0 +1,226 @@
+/********************************************
+*********** Main Styles for body ************
+********************************************/
+/********************************************/
+.clear {
+  clear: both; }
+
+.clear20 {
+  height: 20px;
+  width: 100%;
+  clear: both; }
+
+.clear50 {
+  height: 50px;
+  width: 100%;
+  clear: both; }
+
+.clear100 {
+  height: 100px;
+  width: 100%;
+  clear: both; }
+
+.center {
+  text-align: center;
+  font-size: 50px; }
+
+.sil {
+  font-style: italic;
+  font-weight: 400; }
+
+.emp {
+  font-family: 'Abril Fatface', cursive;
+  font-style: italic; }
+
+.split {
+  width: 50%;
+  padding: 20px;
+  line-height: 1.3; }
+
+.a-left {
+  float: left; }
+
+.a-right {
+  float: left; }
+
+.bk-img {
+  background-size: cover;
+  height: 550px;
+  color: #fff; }
+
+html {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+body {
+  position: relative;
+  min-height: 100%;
+  padding: 0 0 6em 0;
+  margin: 0;
+  background-color: #f7f7f7;
+  background: #f7f7f7;
+  font-family: 'Josefin Sans', sans-serif; }
+
+h1 {
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 3.5rem;
+  letter-spacing: 3.2px;
+  margin: 0.67em 0; }
+
+h2 {
+  font-family: 'Arima Madurai', cursive;
+  text-align: center;
+  text-transform: uppercase; }
+  @media (min-width: 970px) {
+    h2 {
+      font-size: 3vw; } }
+
+h3 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 3vw;
+  text-align: center;
+  letter-spacing: 3.2px; }
+
+a {
+  color: #000000;
+  text-decoration: none;
+  font-family: 'Arima Madurai', cursive; }
+  a:hover {
+    font-weight: 800; }
+
+/************************
+Main styles
+*************************/
+.wrapper {
+  padding: 0;
+  margin: 0 auto;
+  height: 100%; }
+  .wrapper .gbl {
+    height: 550px;
+    width: 100%; }
+  .wrapper .gbl-w {
+    max-width: 960px; }
+
+.g {
+  padding: 20px 10px; }
+  .g-body {
+    padding: 25px 10px; }
+  .g-top {
+    padding: 20px 10px;
+    background-color: #e5c100; }
+    .g-top .sil {
+      text-transform: lowercase; }
+    .g-top header {
+      padding: 40px; }
+      .g-top header h2 {
+        color: #f7f7f7; }
+  .g-split {
+    padding: 0; }
+    .g-split h3 {
+      height: 100px;
+      padding: 20px;
+      width: auto;
+      margin-top: 25%;
+      border-radius: 20px; }
+    .g-split .a-right {
+      font-size: 36px;
+      text-align: center;
+      background-color: #f7f7f7;
+      height: 550px; }
+      .g-split .a-right p:first-child {
+        margin-top: 20%; }
+  .g-second .bk-img {
+    background: url("/assets/images/night-owl.jpeg") no-repeat fixed #000; }
+  .g-second h3 {
+    background: rgba(0, 68, 124, 0.7); }
+  .g-third {
+    background-color: #788757;
+    color: #f7f7f7; }
+    .g-third-blue {
+      background-color: #00447C; }
+  .g-body {
+    font-size: 24px; }
+    .g-body-list {
+      margin: auto;
+      padding-left: 0;
+      height: auto;
+      width: 70%; }
+      @media (max-width: 999px) {
+        .g-body-list {
+          width: 75%; } }
+      .g-body-list li {
+        list-style-type: none;
+        padding: 5px 0;
+        float: left;
+        width: 50%; }
+        .g-body-list li .sil {
+          font-size: 16px; }
+      .g-body-list--gold {
+        color: #e5c100; }
+    .g-body p {
+      text-align: center; }
+  .g-fourth .bk-img {
+    background: url("/assets/images/design.jpeg") no-repeat fixed #000; }
+  .g-fourth h3 {
+    background: rgba(255, 215, 0, 0.7); }
+
+footer {
+  position: absolute;
+  padding: 1rem;
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: -47px; }
+
+/****************************
+Media Queries
+*****************************/
+@media (max-width: 970px) {
+  h3 {
+    font-size: 4.5vw; }
+  .g-top header {
+    padding: 30px 0; }
+  .g-split h3 {
+    padding: 23px 0; }
+  .g-body-list {
+    width: 80%; }
+  .split {
+    width: 100%; } }
+
+@media (max-width: 897px) {
+  .g-body-list {
+    font-size: 19px; }
+    .g-body-list li {
+      float: none;
+      margin: auto;
+      height: auto;
+      width: 50%; } }
+
+@media (max-width: 767px) {
+  .g-split .split p {
+    font-size: 32px; }
+  .g-body-list li .sil {
+    font-size: 13px; }
+  .g-body p {
+    font-size: 19px; } }
+
+@media (max-width: 600px) {
+  h3 {
+    font-size: 22px; }
+  .g-split h3 {
+    margin-top: 40%;
+    padding: 30px 0; }
+  .g-body-list li {
+    width: 63%; } }
+
+@media (max-width: 500px) {
+  .g-body-list li {
+    width: 90%; } }
